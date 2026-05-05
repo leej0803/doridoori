@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qlick – DoriDoori</title>
+  <title>Qlick - App by DoriDoori</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -56,14 +56,18 @@
     }
     .vc-img-wrap {
       width: 100%;
-      height: 100vh;
+      max-height: 100vh;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--bg);
     }
     .vc-img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      height: auto;
+      max-height: 100vh;
+      object-fit: contain;
       display: block;
     }
     .vc-hero-text {
@@ -174,8 +178,10 @@
     /* Mobile */
     @media (max-width: 640px) {
       .vc-nav { padding: 20px 24px; }
-      .vc-img-wrap { height: 70vh; }
+      .vc-img-wrap { max-height: none; }
+      .vc-img { max-height: none; }
       .vc-hero-text { padding: 40px 24px 48px; }
+      .vc-title { font-size: 42px; }
       .vc-footer { padding: 20px 24px; }
     }
   </style>

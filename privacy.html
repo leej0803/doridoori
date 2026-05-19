@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Qlick · DoriDooriBasco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; }
+    body {
+      background: #faf7f2;
+      font-family: 'DM Mono', monospace;
+      color: #1a1a18;
+    }
+
+    :root {
+      --cream: #f0ebe0;
+      --bg: #faf7f2;
+      --ink: #1a1a18;
+      --ink-soft: #3a3a36;
+      --ink-muted: #7a7a72;
+    }
+
+    a { color: var(--ink); }
+
+    /* Nav (same as index) */
+    .vc-nav {
+      padding: 26px 52px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(26,26,24,0.09);
+    }
+    .vc-logo {
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--ink-soft);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .vc-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      background: rgba(26,26,24,0.07);
+      padding: 6px 14px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+    .vc-badge:hover { color: var(--ink); background: rgba(26,26,24,0.12); }
+
+    /* Page header */
+    .pp-header {
+      padding: 64px 52px 40px;
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .pp-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 16px;
+    }
+    .pp-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .pp-app {
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--ink-muted);
+    }
+    .pp-app .ql, .pp-app .ck { color: #7c6af7; }
+    .pp-app .i { color: #ff6eb4; }
+    .pp-updated {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-muted);
+      letter-spacing: 0.06em;
+      margin-top: 18px;
+    }
+
+    /* Body */
+    .pp-body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 20px 52px 80px;
+    }
+    .pp-tldr {
+      background: rgba(124,106,247,0.07);
+      border: 1.5px solid rgba(124,106,247,0.25);
+      border-radius: 8px;
+      padding: 22px 26px;
+      margin-bottom: 48px;
+    }
+    .pp-tldr-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #7c6af7;
+      margin-bottom: 10px;
+    }
+    .pp-tldr-text {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+
+    .pp-section {
+      margin-bottom: 38px;
+    }
+    .pp-section h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--ink);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .pp-section h2::before {
+      content: counter(section, decimal-leading-zero);
+      counter-increment: section;
+      font-family: 'DM Mono', monospace;
+      font-weight: 400;
+      font-size: 12px;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+    }
+    .pp-body { counter-reset: section; }
+
+    .pp-section p,
+    .pp-section li {
+      font-family: 'DM Mono', monospace;
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--ink-soft);
+    }
+    .pp-section p + p { margin-top: 12px; }
+    .pp-section ul {
+      list-style: none;
+      padding: 8px 0 0 0;
+    }
+    .pp-section li {
+      padding-left: 22px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    .pp-section li::before {
+      content: '·';
+      position: absolute;
+      left: 6px;
+      top: -2px;
+      color: var(--ink-muted);
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .pp-section li strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+    .pp-section a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-decoration-color: rgba(124,106,247,0.4);
+      text-underline-offset: 3px;
+    }
+    .pp-section a:hover { text-decoration-color: #7c6af7; }
+
+    .pp-contact {
+      margin-top: 56px;
+      padding: 26px;
+      border: 1.5px dashed rgba(26,26,24,0.18);
+      border-radius: 8px;
+      text-align: center;
+    }
+    .pp-contact-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 8px;
+    }
+    .pp-contact-text {
+      font-family: 'Caveat', cursive;
+      font-size: 22px;
+      color: var(--ink);
+    }
+    .pp-contact-text a {
+      text-decoration: underline;
+      text-decoration-color: rgba(26,26,24,0.3);
+      text-underline-offset: 4px;
+    }
+
+    /* Footer (same as index) */
+    .vc-footer {
+      border-top: 1px solid rgba(26,26,24,0.09);
+      padding: 24px 52px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .vc-footer-l {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--ink-muted);
+      letter-spacing: 0.08em;
+    }
+    .vc-footer-r {
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      font-size: 19px;
+      color: var(--ink-soft);
+    }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+      .vc-nav { padding: 20px 24px; }
+      .pp-header { padding: 44px 24px 28px; }
+      .pp-title { font-size: 24px; }
+      .pp-body { padding: 16px 24px 60px; }
+      .pp-section h2 { font-size: 19px; }
+      .vc-footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="vc-nav">
+    <a href="index.html" class="vc-logo">DoriDoori</a>
+    <a href="index.html" class="vc-badge">← Back</a>
+  </nav>
+
+  <header class="pp-header">
+    <h1 class="pp-title">Privacy Policy</h1>
+    <div class="pp-updated">Last updated · May 19, 2026</div>
+  </header>
+
+  <main class="pp-body">
+
+    <section class="pp-section">
+      <h2>Information we collect</h2>
+      <p>
+        Qlick does not directly collect, store, or share any personally identifiable information (such as your name, email, or contact info). We do not require an account to use the app.
+      </p>
+    </section>
+
+    <section class="pp-section">
+      <h2>Third-party services (ads &amp; analytics)</h2>
+      <p>
+        To provide rewarded features, we use third-party services that may collect information used to identify you. This includes:
+      </p>
+      <ul>
+        <li><strong>Google AdMob</strong> — Used to serve rewarded video ads. AdMob collects the Google Advertising ID (AD_ID) and device-specific information to show relevant ads and measure performance.</li>
+        <li><strong>Google Play Services</strong> — Used for core app functionality and performance tracking.</li>
+      </ul>
+      <p>
+        For more information on how Google uses data, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.
+      </p>
+    </section>
+
+    <section class="pp-section">
+      <h2>Data storage</h2>
+      <p>
+        All user-specific settings (keycap colors, labels, and personal records) are stored locally on your device only. This data never leaves your device and is not synchronized with any external servers.
+      </p>
+    </section>
+
+    <section class="pp-section">
+      <h2>Permissions</h2>
+      <p>
+        The app requests the following permissions:
+      </p>
+      <ul>
+        <li><strong>VIBRATE</strong> — Used only to provide tactile haptic feedback.</li>
+        <li><strong>INTERNET</strong> — Used only to fetch rewarded advertisements from Google AdMob.</li>
+        <li><strong>AD_ID</strong> — Used by AdMob for ad personalization and measurement.</li>
+      </ul>
+    </section>
+
+    <section class="pp-section">
+      <h2>Children's privacy</h2>
+      <p>
+        Qlick is intended for users aged 13 and older. We do not knowingly collect information from children under the age of 13.
+      </p>
+    </section>
+
+    <section class="pp-section">
+      <h2>Changes to this policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.
+      </p>
+    </section>
+
+    <section class="pp-section">
+      <h2>Consent (EEA and UK users only)</h2>
+      <p>
+        Users in the EEA/UK can revoke their ad consent at any time through the 'Privacy' menu in the app settings.
+      </p>
+    </section>
+
+    <section class="pp-section">
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about this privacy policy, contact Jason Lee at <a href="mailto:doridooribasco@gmail.com">doridooribasco@gmail.com</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="vc-footer">
+    <div class="vc-footer-l">DoriDooriBasco · 2026</div>
+    <div class="vc-footer-r">DoriDoori</div>
+  </footer>
+
+</body>
+</html>
